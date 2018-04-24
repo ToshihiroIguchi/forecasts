@@ -2,6 +2,7 @@
 Future values are predicted from time series data on the browser.
 As a program for future prediction, use the prophet package created by facebook.
 
+
 ### Launch web application
 If you use Windows, install [Rtools](https://cran.r-project.org/bin/windows/Rtools/) first.
 
