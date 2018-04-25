@@ -16,8 +16,10 @@ shinyUI(
         htmlOutput("ds"),
         htmlOutput("y"),
         
-        htmlOutput("periods"),
         htmlOutput("freq"),
+        htmlOutput("periods"),
+        htmlOutput("change_scale"),
+        
         
         actionButton("submit", "Analyze")
         
@@ -25,9 +27,10 @@ shinyUI(
       
       mainPanel(
         tabsetPanel(type = "tabs",
-                    tabPanel("Table", tableOutput('table')),
+                    tabPanel("Table", tableOutput("table")),
                     tabPanel("Result", plotOutput("plot")),
-                    tabPanel("Forecast", tableOutput("sum"))
+                    tabPanel("Forecast", tableOutput("sum")),
+                    tabPanel("Components", plotOutput("plot_components"))
                     
         )
       )
